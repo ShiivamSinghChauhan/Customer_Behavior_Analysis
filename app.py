@@ -19,6 +19,10 @@ from predictive_analytics import PredictiveAnalytics
 from visualization import Visualizer
 from insights_generator import InsightsGenerator
 from utils import Utils
+from realtime_streaming import RealTimeDataStreamer
+from nlp_sentiment_analysis import NLPSentimentAnalyzer
+from ab_testing_framework import ABTestingFramework
+from anomaly_detection import AnomalyDetectionSystem
 
 # Page configuration
 st.set_page_config(
@@ -48,7 +52,9 @@ def main():
     page = st.sidebar.selectbox(
         "Select Analysis Module",
         ["📊 Data Overview", "👥 Customer Segmentation", "🔮 Predictive Analytics", 
-         "📈 Marketing Analysis", "🛒 Purchase Patterns", "📋 Insights & Recommendations", "📤 Export Results"]
+         "📈 Marketing Analysis", "🛒 Purchase Patterns", "📋 Insights & Recommendations", 
+         "🔴 Real-Time Streaming", "🤖 NLP Sentiment Analysis", "🧪 A/B Testing", 
+         "⚠️ Anomaly Detection", "📤 Export Results"]
     )
     
     # Data upload section
@@ -82,6 +88,12 @@ def main():
                 predictive = PredictiveAnalytics()
                 visualizer = Visualizer()
                 insights = InsightsGenerator()
+                
+                # Initialize advanced feature classes
+                streamer = RealTimeDataStreamer()
+                nlp_analyzer = NLPSentimentAnalyzer()
+                ab_tester = ABTestingFramework()
+                anomaly_detector = AnomalyDetectionSystem()
                 
                 # Route to different pages
                 if page == "📊 Data Overview":
