@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a comprehensive AI-powered customer behavior analysis application built with Streamlit. The system processes e-commerce transaction data to provide deep insights into customer behavior, segmentation, predictive analytics, and actionable business recommendations. The application is designed to handle synthetic e-commerce datasets and provide a full-featured analytics dashboard for business intelligence.
+This is a comprehensive AI-powered customer behavior analysis application built with Streamlit. The system processes e-commerce transaction data to provide deep insights into customer behavior, segmentation, predictive analytics, and actionable business recommendations. The application includes advanced features for real-time data streaming, NLP sentiment analysis, A/B testing, and automated anomaly detection.
 
 ## System Architecture
 
@@ -20,12 +20,20 @@ This is a comprehensive AI-powered customer behavior analysis application built 
 
 ### Module Structure
 The application follows a modular architecture with specialized components:
+
+**Core Analysis Modules:**
 - `DataProcessor`: Handles data loading, validation, and preprocessing
 - `CustomerSegmentation`: Implements RFM analysis and customer clustering
 - `PredictiveAnalytics`: Manages CLV prediction and churn analysis
 - `Visualizer`: Creates interactive visualizations and charts
 - `InsightsGenerator`: Generates AI-powered business insights and recommendations
 - `Utils`: Provides utility functions for formatting and calculations
+
+**Advanced Feature Modules:**
+- `RealTimeDataStreamer`: Handles real-time data streaming from APIs, WebSockets, or demo mode
+- `NLPSentimentAnalyzer`: Advanced sentiment analysis using Hugging Face models with fallback keyword analysis
+- `ABTestingFramework`: Complete A/B testing framework with statistical significance testing
+- `AnomalyDetectionSystem`: Automated anomaly detection and alert system for behavior changes
 
 ## Key Components
 
@@ -119,7 +127,8 @@ Optional columns for enhanced analysis:
 
 ## Changelog
 
-- June 17, 2025. Initial setup
+- June 17, 2025: Initial setup with core customer behavior analysis features
+- June 17, 2025: Integrated advanced features including real-time streaming, NLP sentiment analysis, A/B testing framework, and anomaly detection system
 
 ## User Preferences
 
