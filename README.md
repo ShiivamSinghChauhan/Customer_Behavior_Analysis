@@ -107,14 +107,6 @@ Optional columns for enhanced analysis:
 - GTK3, GObject Introspection: GUI framework support
 - QHULL, TCL/TK: Mathematical and visualization libraries
 
-## Deployment Strategy
-
-### Replit Configuration
-- **Runtime**: Python 3.11 with Nix package management
-- **Deployment Target**: Autoscale deployment
-- **Port Configuration**: Streamlit runs on port 5000
-- **Workflow**: Automated deployment with parallel task execution
-
 ### Environment Setup
 - Nix-based package management ensures consistent environment
 - All dependencies managed through `pyproject.toml` and Nix configuration
